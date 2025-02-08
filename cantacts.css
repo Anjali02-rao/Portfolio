@@ -1,0 +1,43 @@
+.contact-section {
+  height: 50vh;
+  background: #f50482;
+  background: linear-gradient(259deg, #f5048277 25%, #ffd9f4 68%);
+}
+
+.contacts {
+  font-size: 120px;
+  font-weight: 900;
+  opacity: 0.2;
+  margin-left: 170px;
+}
+.contact_container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.contact-details {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+span {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.social-media {
+  font-size: 26px;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+}

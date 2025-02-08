@@ -1,0 +1,35 @@
+.experience-section {
+  height: 100vh;
+  background: #f50482;
+  background: linear-gradient(259deg, #f5048277 25%, #ffd9f4 68%);
+}
+
+.ferdigheter {
+  font-size: 180px;
+  font-weight: 900;
+  margin-left: 390px;
+  opacity: 0.2;
+  transform: translate(-50%, -50%);
+}
+
+.tech_icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-area: auto;
+  margin-top: -60px;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* height: 160px;
+  width: 160px; */
+}
+
+.css_icon {
+  margin-left: 6px;
+  margin-top: 4px;
+}
+
+.javascrip_icon {
+  margin-bottom: 6px;
+}
