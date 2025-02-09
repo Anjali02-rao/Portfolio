@@ -41,3 +41,22 @@ span {
   /* justify-content: space-between; */
   /* align-content: space-between; */
 }
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+}
+
+#scroll-to-top img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+#scroll-to-top:hover img {
+  transform: scale(1.2);
+}

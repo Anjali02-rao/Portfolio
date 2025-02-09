@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="experience.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="cantacts.css">
+    
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,18 +30,21 @@
   </head>
   <body>
     <header class="header">
-      <img src="logo" alt="logo" class="logo" />
+      <img src="IMAGES/logo.png" alt="Logo" class="logo" />
 
       <nav class="navbar">
         <ul class="navbar-links">
           <li>
-            <a href="#about" onclick="toggleMenu()" class="active">Om Meg</a>
+            <a href="#hero" onclick="toggleMenu()">Hjem</a>
+          </li>
+          <li>
+            <a href="#about" onclick="toggleMenu()">Om Meg</a>
           </li>
           <li><a href="#prosjekter" onclick="toggleMenu()">Prosjekter</a></li>
           <li><a href="#kontakt" onclick="toggleMenu()">Kontakt</a></li>
         </ul>
       </nav>
-      <nav id="hamburger-nav">
+      <div id="hamburger-nav">
         <div class="hamburger-menu" onclick="toggleMenu()">
           <div class="hamburger-icon" >
             <span></span>
@@ -48,10 +52,10 @@
             <span></span>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <section class="hero-section">
+    <section id="hero-section">
       <div class="intro-text">
         <h4>Hei👋,Jeg er</h4>
         <h1>ANJALI RAO</h1>
@@ -112,90 +116,138 @@
         <div class="prj_box">     
         <img src="IMAGES/Earth Animation.png" alt="prj1" class="prj-img">
         <div class="project_description">
-          <h3>Earth Animation</h3>
+          
           <p>Jorden går i bane rundt solen og roterer rundt sin akse, og månen går i bane rundt jorden og roterer rundt sin akse.</p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->
-            <label for="techology">HTML, CSS</lable>
+           <div class ="technology">
+            <h3>HTML, CSS</h3>
+          </div>
             <div class="links">
-              <a href="https://github.com/Anjali02-rao/Earth-animation-HTML-CSS.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-              <button class="live-page"><a href="https://anjali02-rao.github.io/Earth-animation-HTML-CSS/" >Live Demo</a></button>
+              <a href="https://github.com/Anjali02-rao/Earth-animation-HTML-CSS.git" target="_blank">
+                <img src="IMAGES/github.png" alt="GitHub" class="github">
+              </a>
+              <a href="https://anjali02-rao.github.io/Earth-animation-HTML-CSS/" target="_blank" class="live-page">
+                Live Demo
+              </a>
             </div>
-        </div>
+          </div>
         </div>
         
         <div class="prj_box">     
-        <img src="IMAGES/Gutendex.png" alt="prj2" class="prj-img">
-        <div class="project_description">
-          <h3>Gutendex Books Library</h3>
+          <img src="IMAGES/Ønskelister_npm.png" alt="prj2" class="prj-img">
+          <div class="project_description">
+            
+            <p>En fantastisk nettside for barneønskelister, med bruk av React, NPM-pakke og stylede komponenter.</p>
+            <div class="technology">
+              <h3>HTML, CSS, JAVASCRIPT, REACT</h3>
+            </div>  
+                <div class="links">
+                  <a href="https://github.com/Anjali02-rao/Onskelister_ReactPrj.git" target="_blank">
+                    <img src="IMAGES/github.png" alt="GitHub" class="github">
+                  </a>
+                  <a href="https://anjali02-rao.github.io/Onskelister_ReactPrj/" target="_blank" class="live-page">
+                    Live Demo
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="prj_box">     
+            <img src="IMAGES/Time Tracker.png" alt="prj3" class="prj-img">
+            <div class="project_description">
+              <p>Time tracker overvåker og registrerer hvor mye tid som brukes på ulike oppgaver og aktiviteter.</p>
+              <div class="technology">
+                <h3>HTML, CSS, JAVASCRIPT</h3>
+              </div>  
+                  <div class="links">
+                    <a href="https://github.com/Anjali02-rao/Time_Tracker.git" target="_blank">
+                      <img src="IMAGES/github.png" alt="GitHub" class="github">
+                    </a>
+                    <a href="https://anjali02-rao.github.io/Time_Tracker/" target="_blank" class="live-page">
+                      Live Demo
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+        <div class="prj_box">     
+        <img src="IMAGES/Gutendex.png" alt="prj4" class="prj-img">
+        <div class="project_description">          
           <p>Denne appen bruker Gutendex API for å vise en liste over bøker og deres detaljer.
             <br>Velg blant gratis bøker, last dem ned eller les dem på nettet. </p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->            
-              <label for="techology">HTML, CSS, JAVASCRIPT, REACT</lable>
+            <div class="technology">
+             <h3>HTML, CSS, JAVASCRIPT, REACT</h3>
+            </div> 
                 <div class="links">
-                  <a href="https://github.com/Anjali02-rao/Gutendex-BooksApp.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-                  <button class="live-page"><a href="https://anjali02-rao.github.io/Gutendex-BooksApp/" >Live Demo</a></button>
-                </div>
-              
-        </div>
-        </div>
-
-        <div class="prj_box">     
-        <img src="IMAGES/Ønskelister_npm.png" alt="prj3" class="prj-img">
-        <div class="project_description">
-          <h3>Ønskelister</h3>
-          <p>En fantastisk nettside for barneønskelister, med bruk av React, NPM-pakke og stylede komponenter.</p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->
-            <label for="techology">HTML, CSS, JAVASCRIPT, REACT</lable>
-              <div class="links">
-                <a href="https://github.com/Anjali02-rao/Onskelister_ReactPrj.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-                <button class="live-page"><a href="https://anjali02-rao.github.io/Onskelister_ReactPrj/" >Live Demo</a></button>
+                  <a href="https://github.com/Anjali02-rao/Gutendex-BooksApp.git" target="_blank">
+                    <img src="IMAGES/github.png" alt="GitHub" class="github">
+                  </a>                  
+                  <a href="https://anjali02-rao.github.io/Gutendex-BooksApp/" target="_blank" class="live-page">
+                    Live Demo
+                  </a>                  
               </div>
-        </div>
-        </div>
+            </div>
+          </div>        
 
         <div class="prj_box">     
-        <img src="IMAGES/Food Recipe API.png" alt="prj4" class="prj-img">
-        <div class="project_description">
-          <h3>Food Recipe API</h3>
+        <img src="IMAGES/Food Recipe API.png" alt="prj5" class="prj-img">
+        <div class="project_description">          
           <p>Denne matoppskriftsappen er designet for hjemmekokker, fra nybegynnere til ambisiøse superkokker, med steg for steg hjemmelagde enkle og smakfulle oppskrifter ved hjelp av API.</p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->
-            <label for="techology">HTML, CSS, JAVASCRIPT</lable>
-              <div class="links">
-                <a href="https://github.com/Anjali02-rao/Food-Recipe-App.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-                <button class="live-page"><a href="https://anjali02-rao.github.io/Food-Recipe-App/" >Live Demo</a></button>
-              </div>
-        </div>
+          <div class="technology">
+            <h3>HTML, CSS, JAVASCRIPT</h3>
+          </div> 
+          <div class="links">
+          <a href="https://github.com/Anjali02-rao/Food-Recipe-App.git" target="_blank">
+            <img src="IMAGES/github.png" alt="GitHub" class="github">
+        </a>        
+        <a href="https://anjali02-rao.github.io/Food-Recipe-App/" target="_blank" class="live-page">
+            Live Demo
+        </a>
+            </div> 
+          </div>
         </div>
 
-        <div class="prj_box">     
-        <img src="IMAGES/Time Tracker.png" alt="prj5" class="prj-img">
-        <div class="project_description">
-          <h3>Time Tracker</h3>
-          <p>Time tracker overvåker og registrerer hvor mye tid som brukes på ulike oppgaver og aktiviteter.</p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->
-            <label for="techology">HTML, CSS, JAVASCRIPT</lable>
-              <div class="links">
-                <a href="https://github.com/Anjali02-rao/Time_Tracker.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-                <button class="live-page"><a href="https://anjali02-rao.github.io/Time_Tracker/" >Live Demo</a></button>
-              </div>
-        </div>
-        </div>
+        
 
         <div class="prj_box">     
         <img src="IMAGES/User Data.png" alt="prj6" class="prj-img">
-        <div class="project_description">
-          <h3>Expenses Tracker</h3>
-          <p>Denne utgiftssporingsappen hjelper deg med å samle inn og klassifisere kjøpene dine slik at du gjenkjenner forbruksmønstre og ser hvor du kan redusere kostnadene dine.</p>
-            <!-- <i class="fa-solid fa-square-arrow-up-right"></i> -->
-            <label for="techology">HTML, CSS, JAVASCRIPT</lable>
-              <div class="links">
-                <a href="https://github.com/Anjali02-rao/Expense-Tracker-edited.git" ><img src="IMAGES/github.png" alt="github" class="github"></a>
-                <button class="live-page"><a href="https://anjali02-rao.github.io/Expense-Tracker-edited/" >Live Demo</a></button>
-              </div>
-        </div>
+        <div class="project_description">          
+          <p>Denne utgiftssporingsappen hjelper deg med å fortsette å spore utgiftene dine og klassifisere kjøpene dine slik at du gjenkjenner forbruksmønstre og ser hvor du kan redusere kostnadene dine.</p>
+          <div class="technology">
+            <h3>HTML, CSS, JAVASCRIPT</h3>
+          </div>  
+          <div class="links">
+            <a href="https://github.com/Anjali02-rao/Expense-Tracker-edited.git" target="_blank" >
+              <img src="IMAGES/github.png" alt="GitHub" class="github">
+            </a>
+              <a href="https://anjali02-rao.github.io/Expense-Tracker-edited/" target="_blank" class="live-page">
+                Live Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <script>
+      document.querySelectorAll(".github").forEach(img => {
+    img.addEventListener("click", function(event) {
+        console.log('GitHub image clicked'); // Check if this is triggered
+        event.preventDefault(); // Prevent GitHub link from opening
+        
+        // Find the closest .links container, and then get the live demo link
+        const liveDemoLink = this.closest(".links").querySelector(".live-page");
+        
+        if (liveDemoLink) {
+            console.log('Opening Live Demo: ', liveDemoLink.href); // Check if the link is correct
+            window.open(liveDemoLink.href, "_blank"); // Open the live demo link
+        } else {
+            console.log('No Live Demo link found!');
+        }
+    });
+});
+
+
+    </script>
 
 
     <section class="contact-section"> 
@@ -213,6 +265,9 @@
           <a href="#"><i class="fa-brands fa-github" onclick="location.href='https:www.linkedin.com/in/anjaliraok'"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin" onclick="location.href='https://github.com/Anjali02-rao'"></i></a>
       </div>
+        <a href="#contact" id="scroll-to-top"
+          ><img src="IMAGES/bxs_up-arrow.png" alt="Top" />
+        </a>
       </div>
     </section>
   </body>

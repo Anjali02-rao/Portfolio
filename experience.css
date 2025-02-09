@@ -16,20 +16,11 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-area: auto;
-  margin-top: -60px;
-
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
-  /* height: 160px;
-  width: 160px; */
+  margin-left: 80px;
+  gap: 10px;
 }
 
 .css_icon {
   margin-left: 6px;
   margin-top: 4px;
-}
-
-.javascrip_icon {
-  margin-bottom: 6px;
 }

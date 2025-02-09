@@ -2,9 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column;
-    flex-wrap: wrap; */
-  /* gap: 40px; */
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -21,7 +18,7 @@
   left: 60%;
   opacity: 0.2;
   transform: translate(-50%, -50%);
-  /* margin-left: 130px; */
+  margin-bottom: 26px;
   flex: 1;
   z-index: -1;
   white-space: nowrap;
@@ -50,7 +47,6 @@
 }
 
 .about-container {
-  /* max-width: 500px; */
   flex: 1;
   z-index: 1;
 }
@@ -60,7 +56,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   text-align: center;
   max-width: 600px;
 }
@@ -69,7 +64,6 @@
   font-size: 16px;
   color: #1e1e1e;
   line-height: 1.6;
-  /* margin-bottom: 10px; */
 }
 
 .abt_txt_1 {
