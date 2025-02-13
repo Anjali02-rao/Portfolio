@@ -20,13 +20,12 @@ html {
   overflow: auto;
 }
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background: #222;
-  color: white;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -40,26 +39,31 @@ html {
   border-radius: 5px;
 }
 
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+#navbar-links {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  text-align: center;
+  align-items: flex-end;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar-links li {
-  display: inline-block;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
+#navbar-links li {
   padding: 10px;
+  list-style: none;
+}
+
+#navbar-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  /* padding: 10px; */
   transition: 0.3s;
 }
 
-.navbar-links a:hover,
-.navbar-links a.active {
+#navbar-links a:hover,
+#navbar-links a.active {
   color: #131313;
   border-radius: 5px;
 }
@@ -68,50 +72,16 @@ html {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
+/* Hamburger Menu */
+#hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
 
-  #hamburger-nav {
-    display: block !important;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 100;
-  }
-
-  .hamburger-menu {
-    cursor: pointer;
-  }
-
-  .hamburger-icon span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 6px 0;
-    transition: 0.3s;
-  }
-
-  /* --- MOBILE MENU STYLING --- */
-  .navbar-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #222;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-
-  .navbar-links li {
-    padding: 15px 0;
-  }
+#hamburger-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
 }

@@ -43,14 +43,67 @@
     size: 30px;
   }
 
-  .hamburger-icon span {
+ 
+
+
+  #hamburger-nav {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+
+  #hamburger-menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  #hamburger-icon span {
     display: block;
     width: 30px;
     height: 3px;
-    background: white;
+    color: rgb(68, 67, 67);
     margin: 6px 0;
     transition: 0.3s;
   }
+
+  /* --- MOBILE MENU STYLING --- */
+
+  #navbar {
+    position: absolute;
+    top: 80%; /* Adjust this based on your header height */
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.9); Optional: Add a background */
+    width: 20px; /* Adjust width as needed */
+    text-align: right;
+    padding: 10px;
+  }
+
+  #navbar-links {
+    display: none;
+    align-items: flex-end;
+    top: 0;
+    left: 0;
+    width: 0%;
+    /* background: #555555; */
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    line-height: 0.2;
+  }
+
+  #navbar-links li {
+    padding: 10px 20px;
+  }
+
+  #navbar-links a {
+    /* color: white; Adjust as per your design */
+    text-decoration: none;
+    display: block;
+  }
+}
 
   /* ---- HERO SECTION ---- */
 
@@ -134,4 +187,7 @@
     height: 80px;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 480px) {
 }

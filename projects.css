@@ -1,25 +1,34 @@
-.projects-section {
+#projects-section {
+  position: relative;
   height: 100vh;
   height: 100%;
   width: 100%;
 }
 
 .projects {
-  font-size: 180px;
+  position: relative;
+  /* top: 20%; */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
   font-weight: 900;
-  margin-left: 420px;
   opacity: 0.2;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .prj_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  margin-left: 50px;
-  column-gap: 70px;
-  row-gap: 60px;
+  place-items: center;
+  row-gap: 20px;
+  column-gap: 0;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .prj_box {
@@ -35,6 +44,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .prj-img {
@@ -63,11 +73,6 @@
   padding: 15px;
 }
 
-.project_description:hover {
-  transform: translateY(0);
-  opacity: 100%;
-}
-
 .project_description p {
   font-size: 16px;
   line-height: 1.4;
@@ -83,13 +88,6 @@ h3 {
   margin-top: 10px;
 }
 
-.github {
-  height: 20px;
-  width: 20px;
-  background-color: rgb(161, 161, 161);
-  border-radius: 50%;
-}
-
 .live-page {
   display: inline-block;
   text-decoration: none;
@@ -97,13 +95,54 @@ h3 {
   text-align: center;
   border-radius: 5px;
   margin: 8px;
-  background-color: gray;
-  color: white;
   padding: 8px 12px;
   transition: 0.3s;
 }
 
-.live-page:hover,
-.github {
+.live-page {
+  background-color: gray;
+  color: gainsboro;
+}
+
+.git {
+  color: rgb(46, 46, 46);
   background-color: darkgray;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  width: 78px;
+  margin: 8px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.se-more {
+  background-color: darkgray;
+  color: rgb(46, 46, 46);
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  width: 78px;
+  margin: 8px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.live-page:hover {
+  background-color: darkgray;
+  color: rgb(46, 46, 46);
+}
+
+.se-more:hover {
+  background-color: gray;
+  color: gainsboro;
+}
+
+.git:hover {
+  background-color: gray;
+  color: gainsboro;
 }

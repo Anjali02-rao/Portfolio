@@ -1,7 +1,11 @@
 #contact-section {
   height: 80vh;
-  background: #f50482;
-  background: linear-gradient(259deg, #f5048277 25%, #ffd9f4 68%);
+  background: rgb(255, 0, 134);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 0, 134, 1) 0%,
+    rgba(255, 160, 210, 1) 100%
+  );
 }
 
 .contacts {

@@ -1,13 +1,21 @@
-.experience-section {
-  height: 100vh;
-  background: #f50482;
-  background: linear-gradient(259deg, #f5048277 25%, #ffd9f4 68%);
+#experience-section {
+  height: 70vh;
+  padding: 0;
+  background: rgb(255, 0, 134);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 0, 134, 1) 0%,
+    rgba(255, 160, 210, 1) 100%
+  );
 }
 
 .ferdigheter {
-  font-size: 180px;
+  position: relative;
+  top: 15%;
+  bottom: 15%;
+  left: 50%;
+  font-size: 120px;
   font-weight: 900;
-  margin-left: 390px;
   opacity: 0.2;
   transform: translate(-50%, -50%);
 }
@@ -16,8 +24,12 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-area: auto;
-  margin-left: 80px;
-  gap: 10px;
+  margin: 160px 0 0 160px;
+}
+
+.tech_icons img {
+  width: 120px;
+  height: 120px;
 }
 
 .css_icon {

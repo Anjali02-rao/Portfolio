@@ -1,4 +1,4 @@
-.header {
+#header {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,29 +18,29 @@
   margin-right: auto;
 }
 
-.navbar-links {
+#navbar-links {
   display: flex;
   gap: 10px;
   font-weight: bold;
   list-style: none;
 }
 
-.navbar-links a {
+#navbar-links a {
   /* position: relative; */
   font-size: 2.5rem;
   font-weight: 600;
-  color: rgb(68, 67, 67);
+  color: rgb(59, 59, 59);
   text-decoration: none;
   margin-right: 3.5rem;
 }
 
-.navbar-links a:hover {
+#navbar-links a:hover {
   color: #fe9902;
   text-decoration: underline;
   text-underline-offset: 0.7rem;
 }
 
-.navbar-links.open {
+#navbar-links.open {
   max-height: 300px;
 }
 /* .navbar-links a.active::before {
@@ -63,7 +63,7 @@
   display: none;
 }
 
-.hamburger-menu {
+#hamburger-menu {
   display: none;
   cursor: pointer;
 }
