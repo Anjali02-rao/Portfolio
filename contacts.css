@@ -1,32 +1,32 @@
-.contact-section {
-  height: 50vh;
+#contact-section {
+  height: 80vh;
   background: #f50482;
   background: linear-gradient(259deg, #f5048277 25%, #ffd9f4 68%);
 }
 
 .contacts {
+  display: flex;
+  justify-content: center;
   font-size: 120px;
   font-weight: 900;
   opacity: 0.2;
-  margin-left: 170px;
 }
+
 .contact_container {
-  /* display: flex; */
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 .heading {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 86px;
 }
 
 .contact-details {
   font-size: 16px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 36px;
   line-height: 1.7;
 }
 
@@ -36,10 +36,24 @@ span {
   text-underline-offset: 0.2rem;
 }
 
-.social-media {
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 60px;
+  background: transparent;
+  border: 0.2rem;
   font-size: 26px;
-  /* justify-content: space-between; */
-  /* align-content: space-between; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+.fa-brands {
+  width: 40px;
 }
 
 #scroll-to-top {
