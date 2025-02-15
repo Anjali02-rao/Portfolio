@@ -17,7 +17,7 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 63%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 #header {
@@ -40,7 +40,7 @@ html {
 }
 
 #navbar-links {
-  display: none;
+  display: flex;
   position: absolute;
   top: 22px;
   right: 10px;

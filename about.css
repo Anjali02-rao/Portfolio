@@ -4,7 +4,6 @@
   align-items: center;
   min-height: 100vh;
   height: 100%;
-  width: 100%;
   padding: 20px;
   position: relative;
 }
@@ -96,4 +95,107 @@
 .download {
   width: 20px;
   margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  #about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 10rem 5%;
+  }
+
+  .about-me {
+    font-size: 80px;
+    left: 50%;
+    top: 5%;
+    opacity: 0.2;
+    white-space: normal;
+    transform: translateX(-50%);
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pic_container img {
+    max-width: 300px;
+    margin-top: 66px;
+  }
+
+  .about-container {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .details-container {
+    max-width: 90%;
+  }
+
+  .cv_btn {
+    justify-content: center;
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-section {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-me {
+    font-size: 50px;
+    top: 5%;
+    left: 50%;
+    opacity: 0.2;
+    white-space: normal;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pic_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pic_container img {
+    max-width: 250px;
+  }
+
+  .about-container {
+    margin-top: 20px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .details-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .abt_txt_1,
+  .about_text_2 {
+    font-size: 14px;
+  }
+
+  .cv_btn {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .download {
+    width: 16px;
+  }
 }

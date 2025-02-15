@@ -1,19 +1,23 @@
 #experience-section {
   height: 70vh;
   padding: 0;
-  background: rgb(255, 0, 134);
+  background: rgb(255, 0, 147);
   background: linear-gradient(
     270deg,
-    rgba(255, 0, 134, 1) 0%,
-    rgba(255, 160, 210, 1) 100%
+    rgba(255, 0, 147, 1) 0%,
+    rgba(255, 211, 231, 1) 100%
   );
 }
 
 .ferdigheter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
+  align-items: center;
+  left: 50%;
   top: 15%;
   bottom: 15%;
-  left: 50%;
   font-size: 120px;
   font-weight: 900;
   opacity: 0.2;
@@ -24,7 +28,8 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-area: auto;
-  margin: 160px 0 0 160px;
+  margin-top: 90px;
+  margin-left: 90px;
 }
 
 .tech_icons img {
@@ -35,4 +40,72 @@
 .css_icon {
   margin-left: 6px;
   margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  #experience-section {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .ferdigheter {
+    font-size: 80px;
+    opacity: 0.2;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.2;
+  }
+
+  .tech_icons {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px auto;
+    gap: 26px;
+    justify-content: center;
+  }
+
+  .tech_icons img {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  #experience-section {
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .ferdigheter {
+    font-size: 50px;
+    top: 5%;
+    opacity: 0.2;
+    white-space: normal;
+    transform: translate(-50%, 0);
+  }
+
+  .tech_icons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 50px auto 0;
+    justify-content: center;
+  }
+
+  .tech_icons img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .css_icon {
+    margin: 0;
+  }
 }

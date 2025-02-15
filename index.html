@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="about.css">
@@ -30,29 +29,22 @@
   </head>
   <body>
     <header id="header">
-      <img src="IMAGES/logo.png" alt="Logo" class="logo"/>
-
+      <div class="logo-container">
+        <img src="IMAGES/logo.png" alt="Logo" class="logo">
+      </div>
       <nav id="navbar">
         <ul id="navbar-links">
           <li>
-            <a href="#hero" onclick="toggleMenu()">Hjem</a>
+            <a href="#hero-section">Hjem</a>
           </li>
           <li>
-            <a href="#about" onclick="toggleMenu()">OmMeg</a>
+            <a href="#about-section">OmMeg</a>
           </li>
-          <li><a href="#prosjekter" onclick="toggleMenu()">Prosjekter</a></li>
-          <li><a href="#kontakt" onclick="toggleMenu()">Kontakt</a></li>
+          <li><a href=#projects-section>Prosjekter</a></li>
+          <li><a href=#contact-section>Kontakt</a></li>
         </ul>
       </nav>
-      <div id="hamburger-nav">
-        <div id="hamburger-menu" onclick="toggleMenu()">
-          <div id="hamburger-icon" >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
+    </div>
     </header>
 
     <section id="hero-section">
@@ -232,24 +224,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      document.querySelectorAll(".github").forEach(img => {
-    img.addEventListener("click", function(event) {
-        console.log('GitHub image clicked');
-        event.preventDefault();      
-        
-        const liveDemoLink = this.closest(".links").querySelector(".live-page");
-        
-        if (liveDemoLink) {
-            console.log('Opening Live Demo: ', liveDemoLink.href); 
-            window.open(liveDemoLink.href, "_blank"); 
-        } else {
-            console.log('No Live Demo link found!');
-        }
-    });
-});
-    </script>
 
 
     <section id="contact-section"> 
