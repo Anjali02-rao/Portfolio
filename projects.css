@@ -43,6 +43,19 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  scale: 0;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+  animation-delay: 3s;
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .prj-img {
@@ -100,6 +113,7 @@ h3 {
 .live-page {
   background-color: gray;
   color: gainsboro;
+  transition: transform 0.5s ease;
 }
 
 .git {
@@ -113,7 +127,7 @@ h3 {
   width: 78px;
   margin: 8px;
   padding: 8px 12px;
-  transition: 0.3s;
+  transition: transform 0.5s ease;
 }
 
 .se-more {
@@ -127,22 +141,25 @@ h3 {
   width: 78px;
   margin: 8px;
   padding: 8px 12px;
-  transition: 0.3s;
+  transition: transform 0.5s ease;
 }
 
 .live-page:hover {
   background-color: darkgray;
   color: rgb(46, 46, 46);
+  transform: scale(1.05);
 }
 
 .se-more:hover {
   background-color: gray;
   color: gainsboro;
+  transform: scale(1.05);
 }
 
 .git:hover {
   background-color: gray;
   color: gainsboro;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

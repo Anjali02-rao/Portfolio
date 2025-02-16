@@ -29,7 +29,7 @@
 }
 
 .intro-text h1 {
-  font-size: 10.2rem;
+  font-size: 102px;
   font-weight: 700;
   font-family: Inknut Antiqua;
   background-clip: text;
@@ -42,8 +42,6 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   white-space: nowrap;
-  margin-top: 0;
-  padding: 0;
 }
 
 .intro-text h3 {
