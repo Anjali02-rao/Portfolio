@@ -47,6 +47,31 @@
   max-height: 300px;
 }
 
+@media (max-width: 768px) {
+  #header {
+    padding: 15px 5%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  #navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: static;
+    width: auto;
+  }
+
+  #navbar-links a {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   #header {
     padding: 15px 5%;
@@ -90,30 +115,5 @@
   #navbar-links a {
     font-size: 16px;
     margin: 5px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #header {
-    padding: 15px 5%;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .logo {
-    width: 80px;
-    height: auto;
-  }
-
-  #navbar-links {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    position: static;
-    width: auto;
-  }
-
-  #navbar-links a {
-    font-size: 20px;
   }
 }
