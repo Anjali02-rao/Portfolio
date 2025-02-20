@@ -120,10 +120,12 @@
   font-size: 16px;
   width: 80px;
   padding: 8px 5px;
+  text-align: center;
+  flex: 1;
   margin-top: 40px;
   margin-left: 260px;
   background: rgb(102, 102, 102);
-  color: gainsboro;
+  color: rgb(32, 32, 32);
   box-shadow: 0 0 4px rgb(46, 46, 46);
   border: none;
   border-radius: 10px;
@@ -137,7 +139,7 @@
 }
 
 .download {
-  width: 20px;
+  width: 24px;
   margin-right: 5px;
 }
 
@@ -164,10 +166,6 @@
     text-align: center;
   }
 
-  .pic_container img {
-    max-width: 230px;
-  }
-
   .pic_container {
     width: 270px;
     height: 250px;
@@ -176,7 +174,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 40px; */
+  }
+
+  .pic_container img {
+    max-width: 230px;
   }
 
   .about-container {
