@@ -118,17 +118,21 @@
 
 .cv_btn {
   font-size: 16px;
-  width: 80px;
+  width: 120px;
   padding: 8px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   flex: 1;
   margin-top: 40px;
-  margin-left: 260px;
-  background: rgb(102, 102, 102);
-  color: rgb(32, 32, 32);
+  margin-left: 220px;
+  /* background: rgb(102, 102, 102); */
+  color: rgb(70, 70, 70);
   box-shadow: 0 0 4px rgb(46, 46, 46);
-  border: none;
+  border: rgb(102, 102, 102) 0.1rem solid;
   border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
   transition: transform 0.5s ease;
 }
